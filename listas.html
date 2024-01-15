@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de formulario de María</title>
+</head>
+
+<body>
+
+    <header style="background-color: rgb(85, 186, 245);">
+        prueba de header, aqui dentro ponemos lo necesario para que funcione como queremos
+    </header>
+
+    <!-- seccion principal con el contenido de la página -->
+    <main style="display: flex; gap: 50px;">
+        <!-- sección donde colocamos el formulario para que el usuario pueda introducir datos. -->
+        <section style="background-color: rgb(243, 221, 160); width: 250px;">
+
+            <form id="datosIniciales">
+                <div id="data" class="dataFields" style="display: flex; flex-direction: column; width: 200px; height: 100px;">
+                    <label for="cajaNombre">Nombre</label>
+                    <input type="text" name="cajaNombre" id="cajaNombre">
+
+                    <label for="textDescripcion">Descripcion</label>
+                    <input type="text" id="cajaDescripcion" name="cajaDescripcion">
+                </div>
+                <div>
+                    <button type="button" id="btnEnviara" onclick="enviarDatos()">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- sección donde se coloca la tabla que muestra los datos que añadimos mediante el formulario anterior. -->
+        <section style="background-color: rgb(115, 233, 104); width: 275px;">
+            <table id="tablaDatos">
+                <tr>
+                    <th name="celdaName" id="celdaName" style="width: 500px;">Nombre</th>
+                    <th name="celdaDescripcion" id="celdaDescripcion" style="width: 500px;">Descripcion</th>
+                </tr>
+                
+                <tr></tr>
+            </table>
+        </section>
+    </main>
+
+
+    <footer style="background-color: rgb(85, 186, 245);">
+        prueba de footer, completar....
+    </footer>
+
+    <script type="text/javaScript" src="listas.js"></script>
+
+</body>
+
+</html>
