@@ -30,13 +30,14 @@
         <section style="background-color: rgb(243, 221, 160); width: 250px;">
 
             <form id="datosIniciales">
-                <div id="data" class="dataFields" style="display: flex; flex-direction: column; width: 200px; height: 100px;">
+                <fieldset id="data" class="dataFields" style="display: flex; flex-direction: column; width: 200px; height: 100px;">
+                    <legend>Registro de datos personales</legend>
                     <label for="cajaNombre">Nombre</label>
                     <input type="text" name="cajaNombre" id="cajaNombre">
 
                     <label for="textDescripcion">Descripcion</label>
                     <input type="text" id="cajaDescripcion" name="cajaDescripcion">
-                </div>
+                </fieldset>
                 <div>
                     <button type="button" id="btnEnviara" onclick="enviarDatos()">Enviar</button>
                 </div>
