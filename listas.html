@@ -4,41 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de formulario de María</title>
+    <title>Administrador de Lista</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <header style="background-color: rgb(85, 186, 245);">
-        prueba de header, aqui dentro ponemos lo necesario para que funcione como queremos
+    <header>
+        <section  class="nav-bar">
+           
+            <figure class="img-content">
+                <img src="img-logo/logo-ico.ico" alt="">
+            </figure>
+           
+            <nav class="nav-content">
+                <button class="btn-log " type="button">Logout</button>
+           </nav>
+            
+        </section>
     </header>
-
+    
     <!-- seccion principal con el contenido de la página -->
-    <main style="display: flex; gap: 50px;">
+    <main class="content_main">
         <!-- sección donde colocamos el formulario para que el usuario pueda introducir datos. -->
-        <section style="background-color: rgb(243, 221, 160); width: 250px;">
-
-            <form id="datosIniciales">
-                <fieldset  id="data" class="dataFields" style="display: flex; flex-direction: column; width: 200px; height: 100px;">
+        <article class="txt_head_content">
+            <p>Registro de datos personales</p>
+           </article>  
+        <section class="form_content">
+            
+            <form id="registro_datos">
+                
+                <fieldset  id="data" class="dataFields" >
+                   
                     
-                    <legend>Registro de datos personales</legend>
+                    <label for="txt_Name">Nombre</label>
+                    <input type="text" name="Nombre" id="txt_Name" class="inputForm" placeholder="Nombre" >
 
-                    <label for="cajaNombre">Nombre</label>
-                    <input type="text" name="cajaNombre" id="cajaNombre">
+                    <label for="txt_Apellido">Apellido 1</label>
+                    <input type="text" name="apellido1" id="txt_Apellido1" class="inputForm" placeholder="Apellido1">
 
-                    <label for="textDescripcion">Descripcion</label>
-                    <input type="text" id="cajaDescripcion" name="cajaDescripcion">
+                    <label for="txt_Apellido2">Apellido 2</label>
+                    <input type="text" id="txt_Apellido2" name="apellido2" class="inputForm" placeholder="Apellido2">
+
+                    <label for="txt_rol">Rol</label>
+                    <select name="rol" class="rol_option">
+                        <option value="" disabled selected style="color: rgba(0, 0, 0, 0.5);">Rol de usuario</option>
+                        <option value="administrativo">Administrativo</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="docente">Docente</option>
+                    </select>
+
+                    <label for="txt_curso">Curso</label>
+                    <input type="text" id="txt_curso" name="curso" class="inputForm" placeholder="Curso">
+
+                    <label for="txt_clase">Clase</label>
+                    <input type="text" id="txt_clase" name="clase" class="inputForm" placeholder="Clase">
+
+                    <label for="txt_email">E-mail</label>
+                    <input type="text" id="txt_email" name="email" class="inputForm" placeholder="E-mail">
+
                
                 </fieldset>
                
-                <div>
-                    <button type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
-                </div>
+                <span class="btn_add">
+                    <button class="btn_form" type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
+                </span>
+
             </form>
         </section>
 
         <!-- sección donde se coloca la tabla que muestra los datos que añadimos mediante el formulario anterior. -->
-        <section style="background-color: rgb(115, 233, 104); width: 275px;">
+        <section >
             <table id="tablaDatos">
                 <tr>
                     <th name="celdaName" id="celdaName" style="width: 500px;">Nombre</th>
@@ -51,10 +87,7 @@
     </main>
 
 
-    <footer style="background-color: rgb(85, 186, 245);">
-        prueba de footer, completar....
-    </footer>
-
+    
     <script type="text/javaScript" src="listas.js"></script>
 
 </body>

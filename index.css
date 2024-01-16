@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #5584AC;
+    
+
+}
+
+.nav-content{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.btn-log{
+   
+    width: 140px;
+    height: 57px;
+    border: none;
+    font-family: 'Verdana', 'sans-serif'; 
+    border-radius: 40px;
+    background-color: #95D1CC;
+}
+.img-content{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.content_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px ;
+    margin-left: 40px;
+    margin-top: 50px;
+    
+   
+
+}
+
+.form_content{
+     
+     width: 328px;
+     height: 550px;
+     margin-left: -112%;
+     margin-top: 20px;
+     border-radius: 50px;
+     background-color:#22577E;
+}
+
+
+.txt_head_content{
+    width: 328px;
+    height: 37px;
+    margin-left: 5px;
+    margin-top: -29px;
+    border-radius: 20px;
+    background-color: #C8C7C7;
+    
+    
+}
+.txt_head_content p{
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+.dataFields{
+    display: flex; 
+    flex-direction: column; 
+    border: none;
+    width: 200px; 
+    height: 100px;
+}
+.inputForm{
+    
+    margin-left:70%;
+    margin-top: -20px;
+    width: 124px;
+    height: 600%;
+    background-color: red;
+    border-radius: 20px;
+    
+}
+.dataFields label{
+    
+    width: 96px;
+    margin-left: 20px;
+    margin-top: 40px;
+    align-self:flex-start;
+    color: white;
+}
+
+.rol_option{
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 70%;
+    margin-top: -20px;
+    
+}
+
+.btn_add{
+    display: flex;
+    
+
+}
+.btn_add{
+    display: flex;
+    margin-top: 110%;
+    margin-left: 40%;
+    
+    
+}
+
+.btn_form{
+    background-color: #95D1CC; ;
+    border: none;
+    width: 130px;
+    height: 40px; 
+    border-radius: 20px;
+    
+}   
+input:focus {
+    outline: none; /* eliminar el borde por defecto cuando el usuario hace click para ingresar datos*/
+}
+
+
