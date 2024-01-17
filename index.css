@@ -40,13 +40,16 @@
 }
 
 .content_main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 50px ;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 50px; */
     
-   
+   display:grid;
+   grid-template-columns: 30% 70%;
+   margin-left: 240px;
+    margin-top: 50px;
 
 }
 
@@ -265,4 +268,19 @@ margin-bottom: 30px;
     margin-bottom: 100px;
     margin-right: 10px;
 
+}
+
+/*cambios Maria  ....................*/
+/* .seccion_datos{
+    background-color: #5584AC;
+    width: 50%;
+}
+
+.tablaDatos{
+    background-color: #95D1CC;
+    width: 100%;
+} */
+
+.form_content{
+    width: 100%;
 }

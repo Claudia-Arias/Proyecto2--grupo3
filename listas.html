@@ -27,12 +27,12 @@
     <!-- seccion principal con el contenido de la página -->
     <main class="content_main">
         <!-- sección donde colocamos el formulario para que el usuario pueda introducir datos. -->
-        <article class="txt_head_content">
+        <!-- <article class="txt_head_content" style="background-color: green;">
             <p>Registro de datos personales</p>
-           </article>  
-        <section class="form_content">
+           </article>   -->
+        <section class="form_content" style="background-color: yellow;">
             
-            <form id="registro_datos">
+            <form id="registro_datos" style="background-color: red;">
                 
                 <!-- <fieldset  id="data" class="dataFields" > -->
                    
@@ -63,25 +63,31 @@
                     <label for="txt_email">E-mail</label>
                     <input type="text" id="txt_email" name="email" class="inputForm" placeholder="E-mail">
 
-               
+                    <span class="btn_add">
+                        <button class="btn_form" type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
+                        <!-- <button  type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button> -->
+                        
+                    </span>
                 <!-- </fieldset> -->
             </form>                   
-                <span class="btn_add">
-                    <button class="btn_form" type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
-                    <!-- <button  type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button> -->
-                    
-                </span>
+                
         </section>
 
         <!-- sección donde se coloca la tabla que muestra los datos que añadimos mediante el formulario anterior. -->
-        <section >
-            <table id="tablaDatos" class="">
+        <section class="seccion_datos" style="background-color: orange;">
+            <table id="tablaDatos" class="tablaDatos">
                 <tr>
-                    <th name="celdaName" id="celdaName" style="width: 500px;">Nombre</th>
-                    <th name="celdaDescripcion" id="celdaDescripcion" style="width: 500px;">Descripcion</th>
+                    <th name="celdaName" id="celdaName" colspan="7">Nombre</th>
                 </tr>
-                
-                <tr></tr>
+                <tr>
+                    <th name="celdaName" id="celdaName">Nombre</th>
+                    <th name="celdaApellido1" id="celdaApellido1">Apellido 1</th>
+                    <th name="celdaApellido2" id="celdaApellido2">Apellido 2</th>
+                    <th name="celdaRol" id="celdaRol">Rol</th>
+                    <th name="celdaClase" id="celdaCurso">Curso</th>
+                    <th name="celdaClase" id="celdaClase">Clase</th>
+                    <th name="celdaEmail" id="celdaEmail">Email</th>
+                </tr>
             </table>
         </section>
     </main>
