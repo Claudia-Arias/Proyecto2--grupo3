@@ -131,3 +131,85 @@ input:focus {
 }
 
 
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.school-name-main,
+.college,
+.login {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+}
+
+.title-image {
+    height: 100%;
+    width: 50%;
+}
+
+.title-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.person-list {
+    display: flex;
+    gap: 5%;
+    padding-left: 5%;
+    align-items: center;
+    width: 50%;
+}
+
+.person-list img {
+    height: 20%;
+    width: 20%;
+}
+
+.person-list p {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 25px;
+    line-height: 1.3;
+    color: #3774A7;
+}
+
+.college img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 249px; */
+}
+
+.button-login {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: #95D1CC;
+    color: #22577E;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 357px;
+    height: 109px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
