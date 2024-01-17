@@ -1,12 +1,23 @@
 
 let nombre;
-let descripcion;
+let apellido1;
+let apellido2;
+let rol;
+let curso;
+let clase;
+let email;
+
 
 
 function enviarDatos() {
 
-    nombre = document.getElementById('cajaNombre').value;
-    descripcion = document.getElementById('cajaDescripcion').value;
+    nombre = document.getElementById('txt_Name').value;
+    apellido1 = document.getElementById('txt_Apellido1').value;
+    apellido2 = document.getElementById('txt_Apellido2').value;
+    rol = document.getElementById('txt_rol').value;
+    curso = document.getElementById('txt_curso').value;
+    clase = document.getElementById('txt_clase').value;
+    email = document.getElementById('txt_email').value;
 
     crearFilaTabla();
 
