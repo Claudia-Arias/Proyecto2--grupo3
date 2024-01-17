@@ -16,7 +16,7 @@ let campoVacioElement = "";
 
 function validarEmail() {
     let emailInput = document.getElementById("txt_email");
-    let email = emailInput.value;
+    let email = emailInput.value; /*test*/
 
     // Expresión regular para validar el formato del correo electrónico
     let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
