@@ -3,18 +3,21 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     height: 100vh;
 }
 
-.school-name-main,.college,  .login{
+.school-name-main,
+.college,
+.login {
     /* flex: 1; */
     display: flex;
     align-items: center;
@@ -25,7 +28,7 @@ html, body {
     width: 50%;
 }
 
-.title-image img{
+.title-image img {
     width: 100%;
     height: 100%;
 }
@@ -43,7 +46,7 @@ html, body {
     width: 20%;
 }
 
-.person-list p{
+.person-list p {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -52,12 +55,12 @@ html, body {
     color: #3774A7;
 }
 
-.college img{
+.college img {
     /* height: 100%; */
     width: 100%;
 }
 
-.login{
+.login {
     display: flex;
     align-items: center;
     flex-direction: column;
