@@ -52,7 +52,7 @@
 .form_content{
      
      width: 328px;
-     height: 550px;
+     height: 620px;
      margin-left: -112%;
      margin-top: 20px;
      border-radius: 50px;
@@ -80,16 +80,16 @@
     display: flex; 
     flex-direction: column; 
     border: none;
-    width: 200px; 
-    height: 100px;
+    width: 200px;
+    
+  
 }
 .inputForm{
     
     margin-left:70%;
     margin-top: -20px;
     width: 124px;
-    height: 600%;
-    background-color: red;
+    height: 40px;
     border-radius: 20px;
     
 }
@@ -112,13 +112,8 @@
 
 .btn_add{
     display: flex;
-    
-
-}
-.btn_add{
-    display: flex;
-    margin-top: 110%;
-    margin-left: 40%;
+    margin-top: 10%;
+    margin-left: 50%;
     
     
 }
@@ -126,7 +121,7 @@
 .btn_form{
     background-color: #95D1CC; ;
     border: none;
-    width: 130px;
+    width: 100px;
     height: 40px; 
     border-radius: 20px;
     
