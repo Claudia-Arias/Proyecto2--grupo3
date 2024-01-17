@@ -1,0 +1,268 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #5584AC;
+    
+
+}
+
+.nav-content{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.btn-log{
+   
+    width: 140px;
+    height: 57px;
+    border: none;
+    font-family: 'Verdana', 'sans-serif'; 
+    border-radius: 40px;
+    background-color: #95D1CC;
+}
+.img-content{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.content_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px ;
+    margin-left: 40px;
+    margin-top: 50px;
+    
+   
+
+}
+
+.form_content{
+     
+     width: 328px;
+     height: 620px;
+     margin-left: -112%;
+     margin-top: 20px;
+     border-radius: 50px;
+     background-color:#22577E;
+}
+
+
+.txt_head_content{
+    width: 328px;
+    height: 37px;
+    margin-left: 5px;
+    margin-top: -29px;
+    border-radius: 20px;
+    background-color: #C8C7C7;
+    
+    
+}
+.txt_head_content p{
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+.dataFields{
+    display: flex; 
+    flex-direction: column; 
+    border: none;
+    width: 200px;
+    
+  
+}
+.inputForm{
+    
+    margin-left:70%;
+    margin-top: -20px;
+    width: 124px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+.dataFields label{
+    
+    width: 96px;
+    margin-left: 20px;
+    margin-top: 40px;
+    align-self:flex-start;
+    color: white;
+}
+
+.rol_option{
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 70%;
+    margin-top: -20px;
+    
+}
+
+.btn_add{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 50%;
+    
+    
+}
+
+.btn_form{
+    background-color: #95D1CC; ;
+    border: none;
+    width: 100px;
+    height: 40px; 
+    border-radius: 20px;
+    
+}   
+input:focus {
+    outline: none; /* eliminar el borde por defecto cuando el usuario hace click para ingresar datos*/
+}
+
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.school-name-main,
+.college,
+.login {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+}
+
+.title-image {
+    height: 100%;
+    width: 50%;
+}
+
+.title-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.person-list {
+    display: flex;
+    gap: 5%;
+    padding-left: 5%;
+    align-items: center;
+    width: 50%;
+}
+
+.person-list img {
+    height: 20%;
+    width: 20%;
+}
+
+.person-list p {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 25px;
+    line-height: 1.3;
+    color: #3774A7;
+}
+
+.college img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 249px; */
+}
+
+.button-login {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: #95D1CC;
+    color: #22577E;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 357px;
+    height: 109px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+footer {
+background-color:#5584AC;
+display: flex;
+justify-content: space-between;
+padding-left: 2%;
+padding-right: 2%;
+font-family: 'Verdana', 'sans-serif';
+width: 1440;
+height: 124;
+margin-bottom: 30px;
+}
+
+.comment1 {
+    display:flex;
+    justify-content:flex-start;
+    align-items:start;
+    margin-top: 50px;
+    
+}
+
+#comment2 {
+    display:flex;
+    justify-content:flex-start;
+    align-items:start;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    
+}
+#comment2 img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-right: 10px;
+    
+
+
+}
+#comment3 {
+    display: flex;
+    margin-top: 50px;
+   
+ }
+#comment3 img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 1px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+
+}
