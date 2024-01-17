@@ -11,89 +11,97 @@
 <body>
 
     <header>
-        <section  class="nav-bar">
-           
+        <section class="nav-bar">
+
             <figure class="img-content">
                 <img src="img-logo/logo-ico.ico" alt="">
             </figure>
-           
+
             <nav class="nav-content">
                 <button class="btn-log " type="button">Logout</button>
-           </nav>
-            
+            </nav>
+
         </section>
     </header>
-    
+
     <!-- seccion principal con el contenido de la página -->
     <main class="content_main">
         <!-- sección donde colocamos el formulario para que el usuario pueda introducir datos. -->
         <!-- <article class="txt_head_content" style="background-color: green;">
             <p>Registro de datos personales</p>
            </article>   -->
-        <section class="form_content" style="background-color: yellow;">
-            
-            <form id="registro_datos" style="background-color: red;">
-                
+        <section class="form_content">
+
+            <form id="registro_datos">
+
                 <!-- <fieldset  id="data" class="dataFields" > -->
-                   
-                    
-                    <label for="txt_Name">Nombre</label>
-                    <input type="text" name="Nombre" id="txt_Name" class="inputForm" placeholder="Nombre" >
 
-                    <label for="txt_Apellido1">Apellido 1</label>
-                    <input type="text" name="apellido1" id="txt_Apellido1" class="inputForm" placeholder="Apellido1">
 
-                    <label for="txt_Apellido2">Apellido 2</label>
-                    <input type="text" id="txt_Apellido2" name="apellido2" class="inputForm" placeholder="Apellido2">
+                <label for="txt_Name">Nombre</label>
+                <input type="text" name="Nombre" id="txt_Name" class="inputForm" placeholder="Nombre">
 
-                    <label for="txt_rol">Rol</label>
-                    <select name="rol" class="rol_option" id="txt_rol">
-                        <option value="" disabled selected style="color: rgba(0, 0, 0, 0.5);">Rol de usuario</option>
-                        <option value="administrativo">Administrativo</option>
-                        <option value="estudiante">Estudiante</option>
-                        <option value="docente">Docente</option>
-                    </select>
+                <label for="txt_Apellido1">Apellido 1</label>
+                <input type="text" name="apellido1" id="txt_Apellido1" class="inputForm" placeholder="Apellido1">
 
-                    <label for="txt_curso">Curso</label>
-                    <input type="text" id="txt_curso" name="curso" class="inputForm" placeholder="Curso">
+                <label for="txt_Apellido2">Apellido 2</label>
+                <input type="text" id="txt_Apellido2" name="apellido2" class="inputForm" placeholder="Apellido2">
 
-                    <label for="txt_clase">Clase</label>
-                    <input type="text" id="txt_clase" name="clase" class="inputForm" placeholder="Clase">
+                <label for="txt_rol">Rol</label>
+                <select name="rol" class="rol_option" id="txt_rol">
+                    <option value="" disabled selected style="color: rgba(0, 0, 0, 0.5);">Rol de usuario</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                </select>
 
-                    <label for="txt_email">E-mail</label>
-                    <input type="text" id="txt_email" name="email" class="inputForm" placeholder="E-mail">
+                <label for="txt_curso">Curso</label>
+                <input type="text" id="txt_curso" name="curso" class="inputForm" placeholder="Curso">
 
-                    <span class="btn_add">
-                        <button class="btn_form" type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
-                        <!-- <button  type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button> -->
-                        
-                    </span>
+                <label for="txt_clase">Clase</label>
+                <input type="text" id="txt_clase" name="clase" class="inputForm" placeholder="Clase">
+
+                <label for="txt_email">E-mail</label>
+                <input type="email" id="txt_email" name="email" class="inputForm" placeholder="E-mail">
+
+                <span class="btn_add">
+                    <button class="btn_form" type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
+                    <!-- <button  type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button> -->
+
+                </span>
                 <!-- </fieldset> -->
-            </form>                   
-                
+            </form>
+
         </section>
 
         <!-- sección donde se coloca la tabla que muestra los datos que añadimos mediante el formulario anterior. -->
-        <section class="seccion_datos" style="background-color: orange;">
-            <table id="tablaDatos" class="tablaDatos">
-                <tr>
-                    <th name="celdaName" id="celdaName" colspan="7">Nombre</th>
-                </tr>
-                <tr>
-                    <th name="celdaName" id="celdaName">Nombre</th>
-                    <th name="celdaApellido1" id="celdaApellido1">Apellido 1</th>
-                    <th name="celdaApellido2" id="celdaApellido2">Apellido 2</th>
-                    <th name="celdaRol" id="celdaRol">Rol</th>
-                    <th name="celdaClase" id="celdaCurso">Curso</th>
-                    <th name="celdaClase" id="celdaClase">Clase</th>
-                    <th name="celdaEmail" id="celdaEmail">Email</th>
-                </tr>
+        <section class="seccion_datos">
+            <table id="tablaDatos" class="tablaDatos" >
+                <thead class="tablaHead">
+                    <tr>
+                        <th name="celdaName" id="celdaName">Nombre</th>
+                        <th name="celdaApellido1" id="celdaApellido1">Apellido 1</th>
+                        <th name="celdaApellido2" id="celdaApellido2">Apellido 2</th>
+                        <th name="celdaRol" id="celdaRol">Rol</th>
+                        <th name="celdaClase" id="celdaCurso">Curso</th>
+                        <th name="celdaClase" id="celdaClase">Clase</th>
+                        <th name="celdaEmail" id="celdaEmail">Email</th>
+                        <th name="celdaBtnEliminar" id="celdaBtnEliminar">Eliminar</th>
+                        <th name="celdaBtnEditar" id="celdaBtnEditar">Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                    </tr>
+                </tbody> 
+
             </table>
+            
         </section>
     </main>
 
 
-    
+
     <script type="text/javaScript" src="listas.js"></script>
 
 </body>

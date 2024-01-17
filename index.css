@@ -270,17 +270,86 @@ margin-bottom: 30px;
 
 }
 
-/*cambios Maria  ....................*/
-/* .seccion_datos{
-    background-color: #5584AC;
-    width: 50%;
-}
-
-.tablaDatos{
-    background-color: #95D1CC;
-    width: 100%;
-} */
 
 .form_content{
     width: 100%;
 }
+
+/*desde aqui formato para la tabla que muestra los datos*/
+.seccion_datos{
+    border: solid 5px #5584AC;
+    /* margin:0; */
+    padding: 0;
+    overflow-x: auto; /* Horizontal */
+    overflow-y: auto;
+    /* background-color: #95D1CC; */
+    width: 100%;
+    max-height: 500px;/*le ponemos una altura maxima y aparece el scroll vertical*/
+   
+}
+
+.tabla_datos{
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+   /* margin-top: 20px; */
+   background-color: #95D1CC;
+   /* margin: 0; */
+   padding: 0;
+    
+}
+
+/* Estilo para las celdas de datos */
+.tablaDatos td {
+    padding: 8px; /* Espaciado interno para mejorar la legibilidad */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border: 1px solid #ddd; /* Borde para separar las celdas */
+}
+
+.tablaDatos {
+    width: 100%;/*con esto aunque la tabla no contenga datos la cabecera ocupa todo su contenerdor*/
+}
+
+.tablaHead th{
+    background-color:#5584AC; /* Color de fondo para destacar la cabecera */
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border: 1px solid #ddd; /* Borde para separar las celdas */
+    color: white;
+}
+
+
+td{
+    /* padding:2%;
+    border-bottom: solid 1px rgb(6, 42, 97); */
+    width: 100%;/*para que la tabla ocupe todo su container .tabla_datos*/
+}
+
+tbody tr{
+    cursor: pointer;
+    background-color: #95D1CC;
+    width: 100%;
+}
+
+tbody tr:hover{
+    background: white;
+}
+
+/* Ajuste para el nombre de las celdas */
+#celdaName,
+#celdaApellido1,
+#celdaApellido2,
+#celdaRol,
+#celdaCurso,
+#celdaClase,
+#celdaEmail, #celdaBtnEditar, #celdaBtnEliminar {
+    white-space: nowrap; /* Evita el salto de línea para el texto largo */
+    overflow: hidden; /* Oculta el exceso de texto */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para indicar que hay más texto */
+}
+
+/*validacion de campos*/
+input:invalid:required {
+    border: 2px solid rgb(18, 42, 121);
+  }
