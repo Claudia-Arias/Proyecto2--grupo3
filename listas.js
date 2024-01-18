@@ -16,7 +16,7 @@ let campoVacioElement = "";
 
 function validarEmail() {
     let emailInput = document.getElementById("txt_email");
-    let email = emailInput.value;
+    let email = emailInput.value; /*test*/
 
     // Expresión regular para validar el formato del correo electrónico
     let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -169,6 +169,13 @@ function insertarBoton(celda, texto, nuevaFila) {
     boton.textContent = texto;
     boton.type = "button";
     boton.id = "btnFila" + contadorFilas;
+    //estilos al boton
+    boton.style.backgroundColor = "#FFFEB6";
+    boton.style.border = "none";
+    boton.style.borderRadius = "80px";
+    boton.style.width = "100%";
+    boton.style.height = "10git0%";
+    
 
     // Añadir el botón a la celda
     celdaBoton.appendChild(boton);
