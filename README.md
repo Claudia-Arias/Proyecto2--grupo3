@@ -35,8 +35,8 @@ Para obtener una copia local del proyecto, siga estos pasos:
 
 ## Desarrolladoras del Proyecto
 
-- [Blanca](https://https://github.com/blancaden)
-- [Claudia](https://https://github.com/Claudia-Arias)
-- [Elisa](https://https://github.com/elisacl)
+- [Blanca](https://github.com/blancaden)
+- [Claudia](https://github.com/Claudia-Arias)
+- [Elisa](https://github.com/elisacl)
 - [María](https://github.com/MNblue)
 
