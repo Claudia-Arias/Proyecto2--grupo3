@@ -169,6 +169,13 @@ function insertarBoton(celda, texto, nuevaFila) {
     boton.textContent = texto;
     boton.type = "button";
     boton.id = "btnFila" + contadorFilas;
+    //estilos al boton
+    boton.style.backgroundColor = "#FFFEB6";
+    boton.style.border = "none";
+    boton.style.borderRadius = "80px";
+    boton.style.width = "100%";
+    boton.style.height = "10git0%";
+    
 
     // Añadir el botón a la celda
     celdaBoton.appendChild(boton);
