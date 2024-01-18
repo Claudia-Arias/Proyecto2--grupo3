@@ -90,6 +90,7 @@ celdaEmail.textContent = email;
     boton.addEventListener("click", function() {
         alert("biennnnn funcionaaaaa !!!!!!!!!!!");
       });
+      boton.
 
 }
 
