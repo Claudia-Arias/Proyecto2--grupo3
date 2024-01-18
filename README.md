@@ -1,5 +1,6 @@
 # Proyecto2--grupo3
 # *Landing page + data form* of Santa Tecla Instituto Tencológico
+![Logo](/img-logo/logo.png)
 # https://github.com/Claudia-Arias/Proyecto2--grupo3.git
 ## Grupo 3 - Proyecto 2
 
