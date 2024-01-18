@@ -9,6 +9,10 @@ let curso;
 let clase;
 let email;
 
+// Ventana modal MN
+let modal = document.getElementById("ventanaModal");
+let parrafoModal;
+
 let contadorFilas = 0;
 var edicionHabilitada = false;
 let campoVacio = "";
@@ -24,12 +28,12 @@ function validarEmail() {
     // Verificar si el correo electrónico cumple con la expresión regular
     if (regex.test(email)) {
         emailInput.style.color = "grey";
-         return true;
+        return true;
     } else {
         emailInput.setCustomValidity("Ingresa un formato de correo electrónico válido.");
         emailInput.value = "Email no válido";
         emailInput.style.color = "red";
-         return false;
+        return false;
     }
 }
 
@@ -60,37 +64,55 @@ function enviarDatos() {
         switch (campoVacio) {
             case nombre:
                 document.getElementById('txt_Name').style.borderColor = "red";
-                alert("Debes completar el nombre");
+                // alert("Debes completar el nombre");MN
+                modal.style.display = "block";
+                parrafoModal = modal.getElementsByTagName('p');
+                parrafoModal[0].textContent = "Debes introducir el nombre";
                 campoVacioElement = 'txt_Name';
                 break;
             case apellido1:
                 document.getElementById('txt_Apellido1').style.borderColor = "red";
-                alert("Debes completar el primer apellido");
+                // alert("Debes completar el primer apellido");
+                modal.style.display = "block";
+                parrafoModal = modal.getElementsByTagName('p');
+                parrafoModal[0].textContent = "Debes introducir el primer apellido";
                 campoVacioElement = 'txt_Apellido1';
                 break;
             case apellido2:
                 document.getElementById('txt_Apellido2').style.borderColor = "red";
-                alert("debes completar el segundo apellido");
+                // alert("debes completar el segundo apellido");
+                modal.style.display = "block";
+                parrafoModal = modal.getElementsByTagName('p');
+                parrafoModal[0].textContent = "Debes introducir el segundo apellido";
                 campoVacioElement = 'txt_Apellido2';
                 break;
             case selectedOption:
                 document.getElementById('txt_rol').style.borderColor = "red";
-                alert("debes completar el rol");
+                // alert("debes completar el rol");
+                modal.style.display = "block";
+                parrafoModal = modal.getElementsByTagName('p');
+                parrafoModal[0].textContent = "Debes seleccionar el rol";
                 campoVacioElement = 'txt_rol';
                 break;
             case curso:
                 document.getElementById('txt_curso').style.borderColor = "red";
-                alert("debes completar eel curso");
+                // alert("debes completar eel curso");
+                modal.style.display = "block";
+                parrafoModal = modal.getElementsByTagName('p');
+                parrafoModal[0].textContent = "Debes introducir el curso";
                 campoVacioElement = 'txt_curso';
                 break;
             case clase:
                 document.getElementById('txt_clase').style.borderColor = "red";
-                alert("debes completar la clase");
+                // alert("debes completar la clase");
+                modal.style.display = "block";
+                parrafoModal = modal.getElementsByTagName('p');
+                parrafoModal[0].textContent = "Debes introducir la clase";
                 campoVacioElement = 'txt_clase';
                 break;
             case email:
                 document.getElementById('txt_email').style.borderColor = "red";
-                alert("debes completar el email");
+                // alert("debes completar el email");               
                 campoVacioElement = 'txt_email';
                 break;
             default:
@@ -180,7 +202,7 @@ function insertarBoton(celda, texto, nuevaFila) {
     boton.style.borderRadius = "80px";
     boton.style.width = "100%";
     boton.style.height = "10git0%";
-    
+
 
     // Añadir el botón a la celda
     celdaBoton.appendChild(boton);
@@ -220,22 +242,63 @@ function insertarBoton(celda, texto, nuevaFila) {
         };
     });
 
-}  
+}
 
 
 
- 
-    // Accede al botón por su ID y realiza alguna acción
 
- let uploadListButton = document.getElementById('uploadList');
- let saveListButton = document.getElementById('saveList');
-  
-    function buttonuploadlist() {
+// Accede al botón por su ID y realiza alguna acción
 
-        
-   }
-    function buttonsavelist() {
+let uploadListButton = document.getElementById('uploadList');
+let saveListButton = document.getElementById('saveList');
 
-        alert ("Su lista se ha guardado correctamente");
+function buttonuploadlist() {
+
+
+}
+function buttonsavelist() {
+
+    alert("Su lista se ha guardado correctamente");
+}
+
+
+
+
+//validar que solo se puedan escribir letras en las casillas
+function valideKey(evt) {
+
+    // code is the decimal ASCII representation of the pressed key.
+    var code = (evt.which) ? evt.which : evt.keyCode;
+
+    if (code == 8) { // backspace.
+        return true;
+    } else if ((code >= 65 && code <= 90) || (code >= 97 && code <= 122)) {
+        return true;
+    } else {
+        return false;
     }
- 
+}
+
+/**ventana modal*/
+
+
+
+// Hace referencia al elemento <span> que tiene la X que cierra la ventana
+let span = document.getElementsByClassName("cerrar")[0];
+
+// Cuando el usuario hace click en el botón, se abre la ventana
+// boton.addEventListener("click",function() {
+//   modal.style.display = "block";
+// });
+
+// Si el usuario hace click en la x, la ventana se cierra
+span.addEventListener("click",function() {
+  modal.style.display = "none";
+});
+
+// Si el usuario hace click fuera de la ventana, se cierra.
+window.addEventListener("click",function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
