@@ -1,4 +1,23 @@
 
+document.getElementById('logoutButton').addEventListener('click', function() {
+    // Mostrar mensaje de confirmación personalizado
+    Swal.fire({
+        title: '¿Estás seguro de que deseas cerrar sesión?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Redirigir al index.html
+            window.location.href = 'index.html';
+        }
+    });
+});
+
+
 let tabla;
 let nombre;
 let apellido1;
