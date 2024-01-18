@@ -7,6 +7,7 @@
     <title>Administrador de Lista</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/jpg" href="/img-logo/ico.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -19,18 +20,16 @@
             </figure>
 
             <nav class="nav-content">
-                <button class="btn-log " type="button">Logout</button>
+                <button class="btn-log" id="logoutButton" type="button">Logout</button> 
             </nav>
-
+            
         </section>
     </header>
 
     <!-- seccion principal con el contenido de la página -->
     <main class="content_main">
-        <!-- sección donde colocamos el formulario para que el usuario pueda introducir datos. -->
-        <!-- <article class="txt_head_content" style="background-color: green;">
-            <p>Registro de datos personales</p>
-           </article>   -->
+        
+          
         <section class="form_content">
 
             <form id="registro_datos">
@@ -117,7 +116,7 @@
             </div>
             <!--  Fin Mercedes-->
     </main>
-    <footer>
+    <footer class="footer_content">
         <div class="comment1">
             <p> &copy;2024 G3 Tecnologys</p>
         </div>
