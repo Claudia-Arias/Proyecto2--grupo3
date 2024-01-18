@@ -66,27 +66,32 @@ function enviarDatos() {
             case apellido1:
                 document.getElementById('txt_Apellido1').style.borderColor = "red";
                 alert("Debes completar el primer apellido");
-                campoVacioElement = document.getElementById('txt_Apellido1');
+                campoVacioElement = 'txt_Apellido1';
                 break;
             case apellido2:
                 document.getElementById('txt_Apellido2').style.borderColor = "red";
                 alert("debes completar el segundo apellido");
+                campoVacioElement = 'txt_Apellido2';
                 break;
             case selectedOption:
                 document.getElementById('txt_rol').style.borderColor = "red";
                 alert("debes completar el rol");
+                campoVacioElement = 'txt_rol';
                 break;
             case curso:
                 document.getElementById('txt_curso').style.borderColor = "red";
                 alert("debes completar eel curso");
+                campoVacioElement = 'txt_curso';
                 break;
             case clase:
                 document.getElementById('txt_clase').style.borderColor = "red";
                 alert("debes completar la clase");
+                campoVacioElement = 'txt_clase';
                 break;
             case email:
                 document.getElementById('txt_email').style.borderColor = "red";
                 alert("debes completar el email");
+                campoVacioElement = 'txt_email';
                 break;
             default:
                 crearFilaTabla();
@@ -183,7 +188,7 @@ function insertarBoton(celda, texto, nuevaFila) {
     //agregamos un evento al botón para hacerlo funcionar
     boton.addEventListener("click", function () {
         if (boton.textContent == "Eliminar") {
-            alert("eliminar ... " + boton.id.slice(-1));
+            // alert("eliminar ... " + boton.id.slice(-1));
 
             filaBorrar = boton.parentNode.parentNode;
             filaBorrar.remove();
