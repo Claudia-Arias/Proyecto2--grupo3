@@ -4,7 +4,7 @@
 # https://github.com/Claudia-Arias/Proyecto2--grupo3.git
 ## Grupo 3 - Proyecto 2
 
-![Logo](/images/logoG3.png)
+![Logo](/images/logoG3Peque.png)
 
 ## Descripción del Proyecto
 
