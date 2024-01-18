@@ -16,7 +16,7 @@ document.getElementById('logoutButton').addEventListener('click', function() {
         }
     });
 });
-
+ 
 
 let tabla;
 let nombre;
