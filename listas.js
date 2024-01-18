@@ -226,28 +226,16 @@ function insertarBoton(celda, texto, nuevaFila) {
 
  
     // Accede al botón por su ID y realiza alguna acción
-   // var boton = document.getElementById('miBoton');
 
-    //boton.addEventListener('click', function() {
-     //   alert('¡Has hecho clic en el botón!');
-        // Puedes agregar aquí el código que desees ejecutar al hacer clic en el botón
-  //  });
-
-   // Boton para generar titulo a la lista
-  // document.getElementById('saveList').addEventListener('click', function()){
-//    alert('¡Guardar lista!');
-//}
-
-  //  document.getElementById('uploadList').addEventListener('click', function()){
-  //      let namelist = promt ("Nombre de lista: ");
-   //    alert("Listado " + namelist, ", quieres imprimir?"); 
- //  }
- var uploadListButton = document.getElementById('uploadList');
- var saveListButton = document.getElementById('saveList');
+ let uploadListButton = document.getElementById('uploadList');
+ let saveListButton = document.getElementById('saveList');
   
-   const button=document.querySelector("button");
-    button.onclick=function(){
+    function buttonuploadlist() {
 
-        let namelist = promt ("Nombre de lista: ");
-        alert("Listado " + namelist, ", generado");
+        
+   }
+    function buttonsavelist() {
+
+        alert ("Su lista se ha guardado correctamente");
     }
+ 

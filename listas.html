@@ -100,14 +100,19 @@
         </section>
         <!--  Ptincipio Mercedes-->
             <div id="containerfkb">
+
+                <div class="fakeButtons" style="float: right;">
+                    <button class="buttonfkb" onclick="buttonsavelist()" id="saveList">Guardar lista</button>
+                </div>
                 
                <div class="fakeButtons">
-                   <button class="buttonfkb" id="uploadList">Cargar lista</button>
+                   <button class="buttonfkb" onclick="buttonuploadlist()" id="uploadList">Cargar lista</button>
+                   <ul class = "liLista" id="opliLista">
+                        <li>Seleccionar lista</li>
+                   </ul>
                </div>
 
-               <div class="fakeButtons" style="float: right;">
-                 <button class="buttonfkb" id="saveList">Guardar lista</button>
-               </div>
+              
             </div>
             <!--  Fin Mercedes-->
     </main>

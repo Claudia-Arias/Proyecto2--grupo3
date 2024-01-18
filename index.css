@@ -238,19 +238,12 @@ body {
     display: flex;
     justify-content: flex-end;
    
-    /* bottom: 0;
-    right: 0;*/
-    
+ 
 };
 .fakeButtons {
     
     margin-left: 10px;}
-    /* float: right;
-    display: flex;
-   /*  position: fixed;
-     top: 50%
-     right:  0;
-   /*  translateY(-50%);*/
+
  
 .buttonfkb {
     /* Agrega estilos según sea necesario */
@@ -293,9 +286,10 @@ body {
   /*  justify-content: space-evenly; */
     margin-right: 30px; /* Espacio entre botones (ajustable según tu preferencia) */
 }
+
 /* Fin arreglo Mercedes*/
 footer {
-    background-color: #5584AC;
+    /* background-color: #5584AC;
     display: flex;
     justify-content: space-between;
     padding-left: 2%;
@@ -303,7 +297,7 @@ footer {
     font-family: 'Verdana', 'sans-serif';
     width: 1440;
     height: 124;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
 background-color:#5584AC;
 display: flex;
 justify-content: space-between;
@@ -312,9 +306,9 @@ padding-right: 2%;
 font-family: 'Verdana', 'sans-serif';
 width: 1440;
 height: 124;
-margin-bottom: 30px;
-margin-top: 30px;
-height: 120px;
+margin-bottom: 40px;
+margin-top: 100px;
+height: 120px; 
 
 }
 
@@ -485,4 +479,13 @@ tbody tr:hover {
 .btn_add {
     grid-column: span 2;
     /* Ocupa las dos columnas */
+}
+/* botones Mercedes*/
+.liLista {
+    list-style: none;
+    border: rgb(88, 83, 83) 1.5px solid;
+    color: rgb(88, 83, 83);
+    border-radius: 8px;
+    font-size: small;
+    padding-left: 2%;
 }
