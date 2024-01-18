@@ -239,4 +239,22 @@ function insertarBoton(celda, texto, nuevaFila) {
         };
     });
 
-}
+}  
+
+
+
+ 
+    // Accede al botón por su ID y realiza alguna acción
+
+ let uploadListButton = document.getElementById('uploadList');
+ let saveListButton = document.getElementById('saveList');
+  
+    function buttonuploadlist() {
+
+        
+   }
+    function buttonsavelist() {
+
+        alert ("Su lista se ha guardado correctamente");
+    }
+ 

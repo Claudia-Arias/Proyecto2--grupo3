@@ -64,9 +64,6 @@
 
                 <span class="btn_add">
                     <button class="btn_form" type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button>
-                    <button id="boton1">guardar</button>
-                    <button id="boton2">cargar</button>
-
                     <!-- <button  type="button" id="btnEnviara" onclick="enviarDatos()">Añadir</button> -->
 
                 </span>
@@ -100,6 +97,23 @@
             </table>
             
         </section>
+        <!--  Ptincipio Mercedes-->
+            <div id="containerfkb">
+
+                <div class="fakeButtons" style="float: right;">
+                    <button class="buttonfkb" onclick="buttonsavelist()" id="saveList">Guardar lista</button>
+                </div>
+                
+               <div class="fakeButtons">
+                   <button class="buttonfkb" onclick="buttonuploadlist()" id="uploadList">Cargar lista</button>
+                   <ul class = "liLista" id="opliLista">
+                        <li>Seleccionar lista</li>
+                   </ul>
+               </div>
+
+              
+            </div>
+            <!--  Fin Mercedes-->
     </main>
     <footer>
         <div class="comment1">
@@ -118,7 +132,7 @@
 
         </div>
     </footer>
- 
+
 
     <script type="text/javaScript" src="listas.js"></script>
 
