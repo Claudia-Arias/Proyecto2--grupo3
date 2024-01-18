@@ -289,15 +289,7 @@ body {
 
 /* Fin arreglo Mercedes*/
 .footer_content{
-    /* background-color: aqua;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-family: 'Verdana', 'sans-serif';
-    width: 1440;
-    height: 124;
-    margin-bottom: 30px; */
+
 background-color:#5584AC;
 display: flex;
 justify-content: space-between;
@@ -490,7 +482,7 @@ tbody tr:hover {
     padding-left: 2%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 430px) {
     .content_main{
         display: flex;
         flex-direction: column;
@@ -505,15 +497,17 @@ tbody tr:hover {
        
     }
     .footer_content{
-    background-color: #5584AC;
+    
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-left: 2%;
     padding-right: 2%;
     font-family: 'Verdana', 'sans-serif';
-    width: 1440;
+    /* width: 1440; */
     height: 124;
     margin-bottom: 30px;
+    
+    background-color:red;
 
     }
     .comment1{
@@ -526,6 +520,19 @@ tbody tr:hover {
         margin-right: 12px;
     }
     #comment3{
-        margin-top: 8px;
+        margin-top: -6px;
+        margin-left: 40px;
+    }
+    .fakeButtons{
+        margin-top: 30px;
+    }
+    .liLista{
+        margin-top: 20px;
+        
+    }
+    .btn-log{
+        width: 60px;
+        height: 40px;
+        margin-top: 10px;
     }
 }
