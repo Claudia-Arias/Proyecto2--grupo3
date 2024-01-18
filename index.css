@@ -251,6 +251,15 @@ margin-bottom: 30px;
 margin-top: 30px;
 height: 120px;
 
+    background-color: #5584AC;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Verdana', 'sans-serif';
+    width: 1440;
+    height: 124;
+    margin-bottom: 30px;
 }
 
 .comment1 {
