@@ -288,7 +288,9 @@ body {
 }
 
 /* Fin arreglo Mercedes*/
-.footer_content{
+
+/* inicio footer rama blanca */
+/* .footer_content{
 
 background-color:#5584AC;
 display: flex;
@@ -346,7 +348,8 @@ height: 120px;
     margin-bottom: 100px;
     margin-right: 10px;
 
-}
+} */
+ /* fin footer ramablanca */
 
 
 .form_content {
@@ -496,14 +499,16 @@ tbody tr:hover {
         max-height: 500px;
        
     }
-    .footer_content{
+    
+    /* inicio footer responsive rama blanca */
+    /* .footer_content{
         /* display: grid;
         grid-template-columns: auto auto;
         background-color: #5584AC;
         margin-top: 50px; */
         
     
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     padding-left: 2%;
     padding-right: 2%;
@@ -527,7 +532,9 @@ tbody tr:hover {
     #comment3{
         margin-top: -6px;
         margin-left: 40px;
-    }
+    } */
+    /* fin footer rama blanca responsive */
+
     .fakeButtons{
         margin-top: 30px;
     }
