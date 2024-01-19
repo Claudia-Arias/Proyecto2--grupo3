@@ -92,41 +92,41 @@ function enviarDatos() {
             case apellido1:
                 document.getElementById('txt_Apellido1').style.borderColor = "red";
                 // alert("Debes completar el primer apellido");
-                modal.style.display = "block";
-                parrafoModal = modal.getElementsByTagName('p');
-                parrafoModal[0].textContent = "Debes introducir el primer apellido";
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el primer apellido";
                 campoVacioElement = 'txt_Apellido1';
                 break;
             case apellido2:
                 document.getElementById('txt_Apellido2').style.borderColor = "red";
                 
-                modal.style.display = "block";
-                parrafoModal = modal.getElementsByTagName('p');
-                parrafoModal[0].textContent = "Debes introducir el segundo apellido";
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el segundo apellido";
                 campoVacioElement = 'txt_Apellido2';
                 break;
             case selectedOption:
                 document.getElementById('txt_rol').style.borderColor = "red";
                 // alert("debes completar el rol");
-                modal.style.display = "block";
-                parrafoModal = modal.getElementsByTagName('p');
-                parrafoModal[0].textContent = "Debes seleccionar el rol";
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes seleccionar el rol";
                 campoVacioElement = 'txt_rol';
                 break;
             case curso:
                 document.getElementById('txt_curso').style.borderColor = "red";
                 // alert("debes completar eel curso");
-                modal.style.display = "block";
-                parrafoModal = modal.getElementsByTagName('p');
-                parrafoModal[0].textContent = "Debes introducir el curso";
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el curso";
                 campoVacioElement = 'txt_curso';
                 break;
             case clase:
                 document.getElementById('txt_clase').style.borderColor = "red";
                 // alert("debes completar la clase");
-                modal.style.display = "block";
-                parrafoModal = modal.getElementsByTagName('p');
-                parrafoModal[0].textContent = "Debes introducir la clase";
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir la clase";
                 campoVacioElement = 'txt_clase';
                 break;
             case email:
