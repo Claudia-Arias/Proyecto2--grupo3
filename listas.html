@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador de Lista</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/jpg" href="/img-logo/ico.png"/>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -37,13 +38,13 @@
 
 
                 <label for="txt_Name">Nombre</label>
-                <input type="text" name="Nombre" id="txt_Name" class="inputForm" placeholder="Nombre">
+                <input type="text" name="Nombre" id="txt_Name" class="inputForm" placeholder="Nombre" required maxlength="12" onkeypress=" return valideKey(event);">
 
                 <label for="txt_Apellido1">Apellido 1</label>
-                <input type="text" name="apellido1" id="txt_Apellido1" class="inputForm" placeholder="Apellido1">
+                <input type="text" name="apellido1" id="txt_Apellido1" class="inputForm" placeholder="Apellido1" required maxlength="12">
 
                 <label for="txt_Apellido2">Apellido 2</label>
-                <input type="text" id="txt_Apellido2" name="apellido2" class="inputForm" placeholder="Apellido2">
+                <input type="text" id="txt_Apellido2" name="apellido2" class="inputForm" placeholder="Apellido2" required maxlength="12">
 
                 <label for="txt_rol">Rol</label>
                 <select name="rol" class="rol_option" id="txt_rol">
@@ -54,10 +55,10 @@
                 </select>
 
                 <label for="txt_curso">Curso</label>
-                <input type="text" id="txt_curso" name="curso" class="inputForm" placeholder="Curso">
+                <input type="text" id="txt_curso" name="curso" class="inputForm" placeholder="Curso" required maxlength="12">
 
                 <label for="txt_clase">Clase</label>
-                <input type="text" id="txt_clase" name="clase" class="inputForm" placeholder="Clase">
+                <input type="text" id="txt_clase" name="clase" class="inputForm" placeholder="Clase" required maxlength="12">
 
                 <label for="txt_email">E-mail</label>
                 <input type="email" id="txt_email" name="email" class="inputForm" placeholder="E-mail">
@@ -118,16 +119,18 @@
     <!-- footer rama blanca -->
     <!-- <footer class="footer_content">
         <div class="comment1">
+    <footer class="footer_content">
+        <div class="comment1b">
             <p> &copy;2024 G3 Tecnologys</p>
         </div>
 
-        <div id="comment2">
+        <div id="comment2b">
 
                 <img src="img_footer/telefono.png" img>
                 <p>Teléfono 900234353</p>  
         </div>
     
-        <div id="comment3">
+        <div id="comment3b">
             <img src="img_footer/maps.png" img>
             <p> Dirección Avda Ramon y Cajal 20 </p> -->
             <!-- footer rama blanca -->
@@ -135,6 +138,15 @@
         </div>
     </footer>
 
+
+<!-- Ventana modal, por defecto no visiblel -->
+<div id="ventanaModal" class="modal">
+    <div class="contenido-modal">
+        <span class="cerrar">&times;</span>
+        <h2>Aviso</h2><br>
+        <p>Debes completar todos los campos</p>
+    </div>
+  </div>
 
     <script type="text/javaScript" src="listas.js"></script>
 
