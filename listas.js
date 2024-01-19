@@ -83,7 +83,7 @@ function enviarDatos() {
         switch (campoVacio) {
             case nombre:
                 document.getElementById('txt_Name').style.borderColor = "red";
-                // alert("Debes completar el nombre");MN
+             
                 modal.style.display = "block";
                 parrafoModal = modal.getElementsByTagName('p');
                 parrafoModal[0].textContent = "Debes introducir el nombre";
@@ -99,7 +99,7 @@ function enviarDatos() {
                 break;
             case apellido2:
                 document.getElementById('txt_Apellido2').style.borderColor = "red";
-                // alert("debes completar el segundo apellido");
+                
                 modal.style.display = "block";
                 parrafoModal = modal.getElementsByTagName('p');
                 parrafoModal[0].textContent = "Debes introducir el segundo apellido";
@@ -304,11 +304,6 @@ function valideKey(evt) {
 
 // Hace referencia al elemento <span> que tiene la X que cierra la ventana
 let span = document.getElementsByClassName("cerrar")[0];
-
-// Cuando el usuario hace click en el botón, se abre la ventana
-// boton.addEventListener("click",function() {
-//   modal.style.display = "block";
-// });
 
 // Si el usuario hace click en la x, la ventana se cierra
 span.addEventListener("click",function() {
