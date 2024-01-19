@@ -229,6 +229,7 @@ body {
     border: none;
 }
  /*  Principio Mercedes*/
+
 #containerfkb{
   /*  
     justify-content: center;
@@ -246,7 +247,7 @@ body {
 
  
 .buttonfkb {
-    /* Agrega estilos según sea necesario */
+    /* estilos según sea necesario */
     
      margin-bottom: 10px;
      background-color: #95D1CC;
@@ -263,6 +264,7 @@ body {
     
    
 }
+/*   estilo contenedor botones fake*/
 
 .button-containerfkb {
    display: flex;
@@ -280,12 +282,15 @@ body {
 }
 
 .button-containerfkb button {
+
     display: flex;   
     justify-content: center;
     align-items: center;
   /*  justify-content: space-evenly; */
-    margin-right: 30px; /* Espacio entre botones (ajustable según tu preferencia) */
+    margin-right: 30px; 
 }
+
+
 
 /* Fin arreglo Mercedes*/
 footer {
@@ -480,12 +485,54 @@ tbody tr:hover {
     grid-column: span 2;
     /* Ocupa las dos columnas */
 }
+
 /* botones Mercedes*/
+
+.liLista li:hover {
+    background-color: #5584AC;
+    cursor: pointer;
+}
+
 .liLista {
-    list-style: none;
-    border: rgb(88, 83, 83) 1.5px solid;
+    /* display: none; */
+    list-style-type: none;
+ /*   border: rgb(88, 83, 83) 1.5px solid;
     color: rgb(88, 83, 83);
     border-radius: 8px;
     font-size: small;
     padding-left: 2%;
+
+    list-style-type: none;*/
+    padding: 0; 
+    margin: o; 
 }
+
+/* Estilo ventana modal */
+
+.modal {
+    display: none;
+    /* height: 100px; */
+    width: 300px;
+   /* display: none;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .liLista li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilo último elemento lista (sin borde inferior) */
+  
+.liLista li:last-child {
+    border-bottom: none;
+  }

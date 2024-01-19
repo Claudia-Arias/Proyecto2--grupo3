@@ -98,23 +98,66 @@
             </table>
             
         </section>
-        <!--  Ptincipio Mercedes-->
-            <div id="containerfkb">
 
-                <div class="fakeButtons" style="float: right;">
-                    <button class="buttonfkb" onclick="buttonsavelist()" id="saveList">Guardar lista</button>
-                </div>
-                
-               <div class="fakeButtons">
-                   <button class="buttonfkb" onclick="buttonuploadlist()" id="uploadList">Cargar lista</button>
-                   <ul class = "liLista" id="opliLista">
-                        <li>Seleccionar lista</li>
-                   </ul>
-               </div>
+        <!--  Principio Mercedes-->
 
-              
+        <!-- <div id="containerfkb">
+
+            <div class="fakeButtons" style="float: right;">
+
+                <button class="buttonfkb" onclick="buttonsaveList()" id="saveList">Guardar lista</button>
+           
             </div>
+     
+            <div class="fakeButtons">
+          
+                <button class="buttonfkb" onclick="openModal()" id="uploadList">Cargar lista</button>
+           
+            </div>
+              
+            <div class="modal" id="ventModal">
+
+                <ul class="liLista" id="opliLista" >
+
+                    <li onclick="optionSelect('Seleccionar lista')">Seleccionar lista</li>
+                    <li onclick="optionSelect('Administrativo')">Administrativo</li>
+                    <li onclick="optionSelect('Estudiante')">Estudiante</li>
+                    <li onclick="optionSelect('Docente')">Docente</li>
+                    <li onclick="optionSelect('Apellidos')">Apellidos</li>
+                    <li onclick="optionSelect('Curso')">Curso</li>
+                    <li onclick="optionSelect('E-mail')">E-mail</li>   
+
+                </ul>
+
+            </div>
+
+        </div> -->
+
+        <div id="containerfkb">
+            <div class="fakeButtons" style="float: right;">
+                <button class="buttonfkb"  onclick="buttonsaveList()" id="saveList">Guardar lista</button>
+            </div>
+         
+            <div class="fakeButtons">
+                <button class="buttonfkb" onclick="openModal()" id="uploadList">Cargar lista</button>
+            </div>
+              
+            <div class="modal" id="ventModal">
+                <ul class="liLista" id="opliLista">
+                    <li data-option="Seleccionar lista">Seleccionar lista</li>
+                    <li data-option="Administrativo">Administrativo</li>
+                    <li data-option="Estudiante">Estudiante</li>
+                    <li data-option="Docente">Docente</li>
+                    <li data-option="Apellidos">Apellidos</li>
+                    <li data-option="Curso">Curso</li>
+                    <li data-option="E-mail">E-mail</li>   
+                </ul>
+            </div>
+        </div>
+        
+
             <!--  Fin Mercedes-->
+            
     </main>
     <footer>
         <div class="comment1">

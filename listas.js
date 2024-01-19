@@ -220,22 +220,42 @@ function insertarBoton(celda, texto, nuevaFila) {
         };
     });
 
-}  
+};  
 
+// Constantes
+const uploadListButton = document.getElementById('uploadList');
+const saveListButton = document.getElementById('saveList');
+const modal = document.getElementById("ventModal");
+const optionList = document.getElementById("opliLista");
 
+// Event listeners
+uploadListButton.addEventListener('click', openModal);
+saveListButton.addEventListener('click', buttonsaveList);
+optionList.addEventListener('click', handleOptionClick);
 
- 
-    // Accede al botón por su ID y realiza alguna acción
+// Funciones
+function openModal() {
+    console.log("Abriendo la ventana modal");
+    modal.style.display = "block";
+}
 
- let uploadListButton = document.getElementById('uploadList');
- let saveListButton = document.getElementById('saveList');
-  
-    function buttonuploadlist() {
+function hideModal() {
+    console.log("Ocultando la ventana modal");
+    modal.style.display = "none";
+}
 
-        
-   }
-    function buttonsavelist() {
+function buttonsaveList() {
+    console.log("Lista guardada correctamente");
+    alert("Lista guardada correctamente");
+}
 
-        alert ("Su lista se ha guardado correctamente");
+function handleOptionClick(event) {
+    console.log("Manejador de clic de opción ejecutado");
+    const target = event.target;
+    if (target.tagName === 'LI') {
+        const option = target.dataset.option;
+        alert("Has seleccionado: " + option);
+        console.log(option);
+        hideModal();
     }
- 
+}      
