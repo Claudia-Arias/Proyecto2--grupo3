@@ -1,4 +1,23 @@
 
+document.getElementById('logoutButton').addEventListener('click', function() {
+    // Mostrar mensaje de confirmación personalizado
+    Swal.fire({
+        title: '¿Estás seguro de que deseas cerrar sesión?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Redirigir al index.html
+            window.location.href = 'index.html';
+        }
+    });
+});
+ 
+
 let tabla;
 let nombre;
 let apellido1;
@@ -8,6 +27,10 @@ let selectedOption;
 let curso;
 let clase;
 let email;
+
+// Ventana modal MN
+let modalM = document.getElementById("ventanaModalM");
+let parrafoModalM;
 
 let contadorFilas = 0;
 var edicionHabilitada = false;
@@ -24,12 +47,12 @@ function validarEmail() {
     // Verificar si el correo electrónico cumple con la expresión regular
     if (regex.test(email)) {
         emailInput.style.color = "grey";
-         return true;
+        return true;
     } else {
         emailInput.setCustomValidity("Ingresa un formato de correo electrónico válido.");
         emailInput.value = "Email no válido";
         emailInput.style.color = "red";
-         return false;
+        return false;
     }
 }
 
@@ -60,37 +83,55 @@ function enviarDatos() {
         switch (campoVacio) {
             case nombre:
                 document.getElementById('txt_Name').style.borderColor = "red";
-                alert("Debes completar el nombre");
+             
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el nombre";
                 campoVacioElement = 'txt_Name';
                 break;
             case apellido1:
                 document.getElementById('txt_Apellido1').style.borderColor = "red";
-                alert("Debes completar el primer apellido");
+                // alert("Debes completar el primer apellido");
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el primer apellido";
                 campoVacioElement = 'txt_Apellido1';
                 break;
             case apellido2:
                 document.getElementById('txt_Apellido2').style.borderColor = "red";
-                alert("debes completar el segundo apellido");
+                
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el segundo apellido";
                 campoVacioElement = 'txt_Apellido2';
                 break;
             case selectedOption:
                 document.getElementById('txt_rol').style.borderColor = "red";
-                alert("debes completar el rol");
+                // alert("debes completar el rol");
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes seleccionar el rol";
                 campoVacioElement = 'txt_rol';
                 break;
             case curso:
                 document.getElementById('txt_curso').style.borderColor = "red";
-                alert("debes completar eel curso");
+                // alert("debes completar eel curso");
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el curso";
                 campoVacioElement = 'txt_curso';
                 break;
             case clase:
                 document.getElementById('txt_clase').style.borderColor = "red";
-                alert("debes completar la clase");
+                // alert("debes completar la clase");
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir la clase";
                 campoVacioElement = 'txt_clase';
                 break;
             case email:
                 document.getElementById('txt_email').style.borderColor = "red";
-                alert("debes completar el email");
+                // alert("debes completar el email");               
                 campoVacioElement = 'txt_email';
                 break;
             default:
@@ -180,7 +221,7 @@ function insertarBoton(celda, texto, nuevaFila) {
     boton.style.borderRadius = "80px";
     boton.style.width = "100%";
     boton.style.height = "10git0%";
-    
+
 
     // Añadir el botón a la celda
     celdaBoton.appendChild(boton);
@@ -220,4 +261,72 @@ function insertarBoton(celda, texto, nuevaFila) {
         };
     });
 
+}
+
+
+//validar que solo se puedan escribir letras en las casillas
+function valideKey(evt) {
+
+    // code is the decimal ASCII representation of the pressed key.
+    var code = (evt.which) ? evt.which : evt.keyCode;
+
+    if (code == 8) { // backspace.
+        return true;
+    } else if ((code >= 65 && code <= 90) || (code >= 97 && code <= 122)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/**ventana modal*/
+
+
+
+// Hace referencia al elemento <span> que tiene la X que cierra la ventana
+let spanM = document.getElementsByClassName("cerrarM")[0];
+// let spanM = document.getElementById('spanM');
+// Si el usuario hace click en la x, la ventana se cierra
+spanM.addEventListener("click",function() {
+  modalM.style.display = "none";
+});
+
+// Si el usuario hace click fuera de la ventana, se cierra.
+window.addEventListener("click",function(event) {
+  if (event.target == modalM) {
+    modalM.style.display = "none";
+  }
+});
+
+
+const uploadListButton = document.getElementById('uploadList');
+const saveListButton = document.getElementById('saveList');
+const modal2 = document.getElementById("ventModal");
+const optionList = document.getElementById("opliLista");
+// Event listeners
+uploadListButton.addEventListener('click', openModal);
+saveListButton.addEventListener('click', buttonsaveList);
+optionList.addEventListener('click', handleOptionClick);
+// Funciones
+function openModal() {
+    console.log("Abriendo la ventana modal");
+    modal.style.display = "block";
+}
+function hideModal() {
+    console.log("Ocultando la ventana modal");
+    modal.style.display = "none";
+}
+function buttonsaveList() {
+    console.log("Lista guardada correctamente");
+    alert("Lista guardada correctamente");
+}
+function handleOptionClick(event) {
+    console.log("Manejador de clic de opción ejecutado");
+    const target = event.target;
+    if (target.tagName === 'LI') {
+        const option = target.dataset.option;
+        alert("Has seleccionado: " + option);
+        console.log(option);
+        hideModal();
+    }
 }

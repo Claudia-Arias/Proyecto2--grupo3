@@ -59,7 +59,7 @@
     /* width: 328px;
     height: 620px; */
     /* margin-left: -112%; */
-    
+
     border-radius: 50px;
     background-color: #22577E;
     padding-left: 10%;
@@ -99,7 +99,7 @@
     width: 124px;
     height: 40px; */
     border-radius: 20px;
-    padding-left:5%;
+    padding-left: 5%;
 }
 
 
@@ -119,8 +119,8 @@
     margin-left: 70%;
     margin-top: -20px; */
     border-radius: 20px;
-    padding-left:5%;
-    color:grey;
+    padding-left: 5%;
+    color: grey;
 }
 
 .btn_add {
@@ -149,12 +149,25 @@ input:focus {
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
+
 
 html,
 body {
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
+    min-height: 100vh;
+    /*mn......................................................*/
+
 }
+
+#body_index {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
 
 .main {
     display: flex;
@@ -179,6 +192,10 @@ body {
 .title-image img {
     width: 100%;
     height: 100%;
+}
+
+.title-iphone {
+    display: none;
 }
 
 .person-list {
@@ -208,6 +225,10 @@ body {
     width: 100%;
 }
 
+.college-iphone {
+    display: none;
+}
+
 .login {
     display: flex;
     align-items: center;
@@ -229,16 +250,89 @@ body {
     border: none;
 }
 
-footer {
+.footer_home {
     background-color: #5584AC;
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 10%;
     font-family: 'Verdana', 'sans-serif';
-    width: 1440;
-    height: 124;
-    margin-bottom: 30px;
+    height: 100px;
+    font-weight: lighter;
+    margin-top: 110px;
+}
+    /*  Principio Mercedes*/
+    #containerfkb {
+        /*  
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;  */
+        display: flex;
+        justify-content: flex-end;
+
+
+    }
+
+    ;
+
+    .fakeButtons {
+
+        margin-left: 10px;
+    }
+
+
+    .buttonfkb {
+        /* Agrega estilos según sea necesario */
+
+        margin-bottom: 10px;
+        background-color: #95D1CC;
+        border: none;
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+
+        display: flex
+            /*inline-block*/
+        ;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 5px 10px;
+
+
+    }
+
+    .button-containerfkb {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10%;
+        margin-left: 50%;
+        /*  background-color: #95D1CC;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;*/
+    
+   
+}
+
+.button-containerfkb button {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+  /*  justify-content: space-evenly; */
+    margin-right: 30px; /* Espacio entre botones (ajustable según tu preferencia) */
+}
+
+/* Fin arreglo Mercedes*/
+
+/* inicio footer rama blanca */
+/* .footer_content{
+
 background-color:#5584AC;
 display: flex;
 justify-content: space-between;
@@ -247,9 +341,9 @@ padding-right: 2%;
 font-family: 'Verdana', 'sans-serif';
 width: 1440;
 height: 124;
-margin-bottom: 30px;
-margin-top: 30px;
-height: 120px;
+margin-bottom: 40px;
+margin-top: 100px;
+height: 120px; 
 
 }
 
@@ -278,14 +372,75 @@ height: 120px;
     margin-right: 10px;
 
 
+    }
 
-}
+    .button-containerfkb button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*  justify-content: space-evenly; */
+        /* margin-right: 30px; */
+        /* Espacio entre botones (ajustable según tu preferencia) */
+    /* } */
 
-#comment3 {
-    display: flex;
-    margin-top: 50px;
+    /* Fin arreglo Mercedes*/
+    .footer_content {
 
-}
+        background-color: #5584AC;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-family: 'Verdana', 'sans-serif';
+        width: 100%;
+        /* margin-bottom: 40px; */
+        margin-top: 100px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        padding-top: 2%;
+        /* padding: 0; */
+    }
+
+
+    .comment1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        margin-top: 90px;
+        margin-top: 50px;
+        padding-top: 2%;
+    }
+
+    #comment2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        margin-top: 90px;
+
+        margin-bottom: 10px;
+        margin-top: 50px;
+        padding-top: 2%;
+    }
+
+    #comment2 img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        margin-top: 3px;
+        margin-right: 10px;
+        padding-top: 2%;
+
+
+    }
+
+    #comment3 {
+        display: flex;
+        margin-top: 90px;
+
+        margin-top: 50px;
+        padding-top: 2%;
+    }
 
 #comment3 img {
     width: 20px;
@@ -295,84 +450,112 @@ height: 120px;
     margin-bottom: 100px;
     margin-right: 10px;
 
+} */
+ /* fin footer ramablanca */
+
+.comment1b {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 2%;
+    
 }
 
-
-.form_content {
-    width: 100%;
+#comment2b {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-bottom: 10px;
+    margin-top: 2%;
 }
+
+#comment2b img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 2%;
+    margin-right: 10px;
+}
+
+#comment3b {
+    display: flex;
+    margin-top: 2%;
+}
+
+#comment3b img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 1px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+
+}
+
+    .form_content {
+        width: 100%;
+    }
 
 /*desde aqui formato para la tabla que muestra los datos*/
 .seccion_datos {
     border: solid 5px #5584AC;
-    /* margin:0; */
     padding: 0;
     overflow-x: auto;
-    /* Horizontal */
     overflow-y: auto;
-    /* background-color: #95D1CC; */
     width: 100%;
     max-height: 500px;
-    /*le ponemos una altura maxima y aparece el scroll vertical*/
 
-}
+    }
 
-.tabla_datos {
-    font-size: 14px;
-    table-layout: fixed;
-    border-collapse: collapse;
-    width: 100%;
-    /* margin-top: 20px; */
-    background-color: #95D1CC;
-    /* margin: 0; */
-    padding: 0;
+    .tabla_datos {
+        font-size: 14px;
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 100%;
+        /* margin-top: 20px; */
+        background-color: #95D1CC;
+        /* margin: 0; */
+        padding: 0;
 
-}
+    }
 
 /* Estilo para las celdas de datos */
 .tablaDatos td {
     padding: 8px;
     /* Espaciado interno para mejorar la legibilidad */
     text-align: left;
-    /* Alineación del texto a la izquierda */
     border: 1px solid #ddd;
-    /* Borde para separar las celdas */
 }
 
-.tablaDatos {
-    width: 100%;
-    /*con esto aunque la tabla no contenga datos la cabecera ocupa todo su contenerdor*/
-}
+    .tablaDatos {
+        width: 100%;
+    }
 
 .tablaHead th {
     background-color: #5584AC;
     /* Color de fondo para destacar la cabecera */
     padding: 10px;
-    /* Espaciado interno para mejorar la legibilidad */
     text-align: left;
-    /* Alineación del texto a la izquierda */
     border: 1px solid #ddd;
-    /* Borde para separar las celdas */
     color: white;
 }
 
 
-td {
-    /* padding:2%;
+    td {
+        /* padding:2%;
     border-bottom: solid 1px rgb(6, 42, 97); */
-    width: 100%;
-    /*para que la tabla ocupe todo su container .tabla_datos*/
-}
+        width: 100%;
+    }
 
-tbody tr {
-    cursor: pointer;
-    background-color: #95D1CC;
-    width: 100%;
-}
+    tbody tr {
+        cursor: pointer;
+        background-color: #95D1CC;
+        width: 100%;
+    }
 
-tbody tr:hover {
-    background: white;
-}
+    tbody tr:hover {
+        background: white;
+    }
 
 /* Ajuste para el nombre de las celdas */
 #celdaName,
@@ -385,39 +568,358 @@ tbody tr:hover {
 #celdaBtnEditar,
 #celdaBtnEliminar {
     white-space: nowrap;
-    /* Evita el salto de línea para el texto largo */
     overflow: hidden;
-    /* Oculta el exceso de texto */
     text-overflow: ellipsis;
-    /* Muestra puntos suspensivos (...) para indicar que hay más texto */
 }
 
-/*alinear label e inputs*/
 
+    #registro_datos {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 0.7fr 1.5fr;
+        gap: 10px;
+        padding-top: 15%;
+    }
 
-#registro_datos {
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 0.7fr 1.5fr;
-    gap: 10px;
-    padding-top: 15%;
-}
+    #registro_datos label {
+        display: block;
+        margin-bottom: 5px;
+        color: white;
+    }
 
-#registro_datos label {
-    display: block;
-    margin-bottom: 5px;
-    color:white;
-}
-
-#registro_datos input,
-#registro_datos select {
-    width: 85%;
-    box-sizing: border-box;
-    /* margin-bottom: 2%;
+    #registro_datos input,
+    #registro_datos select {
+        width: 85%;
+        box-sizing: border-box;
+        /* margin-bottom: 2%;
     margin-right: 2%; */
-}
+    }
 
-.btn_add {
-    grid-column: span 2;
-    /* Ocupa las dos columnas */
-}
+    .btn_add {
+        grid-column: span 2;
+        /* Ocupa las dos columnas */
+    }
+
+    /* botones Mercedes*/
+    .liLista {
+        list-style: none;
+        border: rgb(88, 83, 83) 1.5px solid;
+        color: rgb(88, 83, 83);
+        border-radius: 8px;
+        font-size: small;
+        padding-left: 2%;
+    }
+
+
+    /*ventana modal*/
+    /* Fondo modal: negro con opacidad al 50% */
+    .modal {
+        display: none;
+        /* Por defecto, estará oculto */
+        position: fixed;
+        /* Posición fija */
+        z-index: 1;
+        /* Se situará por encima de otros elementos de la página*/
+        padding-top: 200px;
+        /* El contenido estará situado a 200px de la parte superior */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Ancho completo */
+        height: 100%;
+        /* Algura completa */
+        overflow: auto;
+        /* Se activará el scroll si es necesario */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Color negro con opacidad del 50% */
+    }
+    
+    /* inicio footer responsive rama blanca */
+    /* .footer_content{
+        /* display: grid;
+        grid-template-columns: auto auto;
+        background-color: #5584AC;
+        margin-top: 50px; */
+        
+    
+    /*display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Verdana', 'sans-serif';
+     width: 1440; 
+    height: 124;
+    margin-bottom: 30px;
+    
+    background-color:#5584AC;
+
+    /* Ventana o caja modal */
+    .contenido-modal {
+        position: relative;
+        /* Relativo con respecto al contenedor -modal- */
+        background-color: white;
+        margin: auto;
+        /* Centrada */
+        padding: 30px;
+        width: 20%;
+        animation-name: animarsuperior;
+        animation-duration: 0.5s;
+        border-radius: 15%;
+    }
+
+    @keyframes animarsuperior {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    /* Botón cerrar */
+    .close {
+        color: black;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 431px) {
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: #5584AC;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-log {
+            width: 140px;
+            height: 57px;
+            border: none;
+            font-family: 'Verdana', 'sans-serif';
+            border-radius: 40px;
+            background-color: #95D1CC;
+        }
+
+        .img-content {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .img-content img {
+            height: 42px;
+        }
+
+        .content_main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .form_content {
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: #22577E;
+        }
+
+        .txt_head_content {
+            width: 100%;
+            height: 37px;
+            margin-left: 0;
+            margin-top: -29px;
+            border-radius: 20px;
+            background-color: #C8C7C7;
+        }
+
+        .txt_head_content p {
+            text-align: center;
+            margin-top: 7px;
+        }
+
+        .dataFields {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            width: 100%;
+        }
+
+        .inputForm {
+            margin-left: 0;
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        .dataFields label {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+            align-self: flex-start;
+            color: white;
+        }
+
+        .rol_option {
+            width: 100%;
+            border-radius: 20px;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .btn_add {
+            display: flex;
+            margin-top: 10%;
+            margin-left: 50%;
+        }
+
+        .btn_form {
+            background-color: #95D1CC;
+            border: none;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            height: auto;
+        }
+
+        .school-name-main,
+        .college,
+        .login {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title-iphone {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .title-iphone img {
+            height: 162px;
+        }
+
+        .title-image img {
+            display: none;
+        }
+
+        .person-list {
+            display: flex;
+            gap: 5%;
+            padding: 20px;
+            align-items: center;
+            height: 97px;
+        }
+
+        .person-list img {
+            height: 59px;
+            width: 62px;
+            margin-left: -100px;
+            margin-right: 20px;
+
+        }
+
+        .person-list p {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-right: -100px;
+            line-height: 1.3;
+            color: #3774A7;
+        }
+
+        .college {
+            display: none;
+        }
+
+        .college-iphone {
+            display: flex;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 213px;
+        }
+
+        .button-login {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            color: #22577E;
+            font-size: 24px;
+            font-weight: bolder;
+            width: 249px;
+            height: 81px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border: none;
+        }
+
+        .footer_home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 250px;
+            padding-top: 60px;
+        }
+
+        .comment1,
+        #comment2,
+        #comment3 {
+            margin: 10px;
+        }
+    }
