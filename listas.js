@@ -29,8 +29,8 @@ let clase;
 let email;
 
 // Ventana modal MN
-let modal = document.getElementById("ventanaModal");
-let parrafoModal;
+let modalM = document.getElementById("ventanaModalM");
+let parrafoModalM;
 
 let contadorFilas = 0;
 var edicionHabilitada = false;
@@ -84,9 +84,9 @@ function enviarDatos() {
             case nombre:
                 document.getElementById('txt_Name').style.borderColor = "red";
              
-                modal.style.display = "block";
-                parrafoModal = modal.getElementsByTagName('p');
-                parrafoModal[0].textContent = "Debes introducir el nombre";
+                modalM.style.display = "block";
+                parrafoModalM = modalM.getElementsByTagName('p');
+                parrafoModalM[0].textContent = "Debes introducir el nombre";
                 campoVacioElement = 'txt_Name';
                 break;
             case apellido1:
@@ -284,17 +284,17 @@ function valideKey(evt) {
 
 
 // Hace referencia al elemento <span> que tiene la X que cierra la ventana
-let span = document.getElementsByClassName("cerrar")[0];
-
+let spanM = document.getElementsByClassName("cerrarM")[0];
+// let spanM = document.getElementById('spanM');
 // Si el usuario hace click en la x, la ventana se cierra
-span.addEventListener("click",function() {
-  modal.style.display = "none";
+spanM.addEventListener("click",function() {
+  modalM.style.display = "none";
 });
 
 // Si el usuario hace click fuera de la ventana, se cierra.
 window.addEventListener("click",function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalM) {
+    modalM.style.display = "none";
   }
 });
 
