@@ -41,11 +41,7 @@
 }
 
 .content_main {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px ;
-    margin-left: 40px;
-    margin-top: 50px; */
+    
 
     display: grid;
     grid-template-columns: 30% 68%;
@@ -56,9 +52,7 @@
 
 .form_content {
 
-    /* width: 328px;
-    height: 620px; */
-    /* margin-left: -112%; */
+   
 
     border-radius: 50px;
     background-color: #22577E;
@@ -94,10 +88,7 @@
 
 .inputForm {
 
-    /* margin-left:70%;
-    margin-top: -20px;
-    width: 124px;
-    height: 40px; */
+   
     border-radius: 20px;
     padding-left: 5%;
 }
@@ -114,10 +105,7 @@
 }
 
 .rol_option {
-    /* width: 60%;
-    border-radius: 20px;
-    margin-left: 70%;
-    margin-top: -20px; */
+   
     border-radius: 20px;
     padding-left: 5%;
     color: grey;
@@ -142,7 +130,7 @@
 
 input:focus {
     outline: none;
-    /* eliminar el borde por defecto cuando el usuario hace click para ingresar datos*/
+    
 }
 
 
@@ -155,7 +143,7 @@ body {
 
 html,
 body {
-    /* height: 100%; */
+  
     height: auto;
     min-height: 100vh;
     
@@ -182,7 +170,7 @@ body {
 .school-name-main,
 .college,
 .login {
-    /* flex: 1; */
+    
     display: flex;
     align-items: center;
 }
@@ -220,7 +208,7 @@ body {
 }
 
 .college img {
-    /* height: 100%; */
+  
     width: 100%;
 }
 
@@ -228,7 +216,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* height: 249px; */
+   
 }
 
 .button-login {
@@ -245,13 +233,9 @@ body {
     border: none;
 }
 
-/*  Principio Mercedes*/
+
 #containerfkb {
-    /*  
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;  */
+   
     display: flex;
     justify-content: flex-end;
 
@@ -267,7 +251,7 @@ body {
 
 
 .buttonfkb {
-    /* Agrega estilos según sea necesario */
+   
 
     margin-bottom: 10px;
     background-color: #95D1CC;
@@ -276,9 +260,7 @@ body {
     height: 40px;
     border-radius: 20px;
 
-    display: flex
-        /*inline-block*/
-    ;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px;
@@ -293,12 +275,7 @@ body {
     justify-content: center;
     margin-top: 10%;
     margin-left: 50%;
-    /*  background-color: #95D1CC;
-    border: none;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;*/
-
+ 
 
 }
 
@@ -306,30 +283,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*  justify-content: space-evenly; */
     margin-right: 30px;
-    /* Espacio entre botones (ajustable según tu preferencia) */
+
 }
 
-/* Fin arreglo Mercedes*/
-/* .footer_content {
-
-    background-color: #5584AC;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-family: 'Verdana', 'sans-serif';
-    width: 100%;
-    /* margin-bottom: 40px; */
-    /*margin-top: 15%;
-    /* height: 2%; */
-    /*position: relative;
-    bottom: 0;
-    /*padding-top: 1%;
-    padding-bottom: 1%;
-    /* padding: 0; */
-/*} */
 .footer_content {
     background-color: #5584AC;
     display: flex;
@@ -354,7 +311,6 @@ body {
     padding-right: 2%;
     font-family: 'Verdana', 'sans-serif';
     width: 100%;
-    /* margin-bottom: 40px; */
     margin-top: 100px;
     height: 120px;
     position: relative;
@@ -439,29 +395,19 @@ body {
 #comment3b img {
     width: 20px;
     height: 20px;
-    /* margin-right: 20px;
-    margin-top: 1px;
-    margin-bottom: 100px;
-    margin-right: 10px; */
-
 }
 
 .form_content {
     width: 100%;
 }
 
-/*desde aqui formato para la tabla que muestra los datos*/
 .seccion_datos {
     border: solid 5px #5584AC;
-    /* margin:0; */
     padding: 0;
     overflow-x: auto;
-    /* Horizontal */
     overflow-y: auto;
-    /* background-color: #95D1CC; */
     width: 100%;
     max-height: 500px;
-    /*le ponemos una altura maxima y aparece el scroll vertical*/
 
 }
 
@@ -470,46 +416,35 @@ body {
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
-    /* margin-top: 20px; */
     background-color: #95D1CC;
-    /* margin: 0; */
     padding: 0;
 
 }
 
-/* Estilo para las celdas de datos */
+
 .tablaDatos td {
     padding: 8px;
-    /* Espaciado interno para mejorar la legibilidad */
     text-align: left;
-    /* Alineación del texto a la izquierda */
     border: 1px solid #ddd;
-    /* Borde para separar las celdas */
 }
 
 .tablaDatos {
     width: 100%;
-    /*con esto aunque la tabla no contenga datos la cabecera ocupa todo su contenerdor*/
+
 }
 
 .tablaHead th {
     background-color: #5584AC;
-    /* Color de fondo para destacar la cabecera */
     padding: 10px;
-    /* Espaciado interno para mejorar la legibilidad */
     text-align: left;
-    /* Alineación del texto a la izquierda */
     border: 1px solid #ddd;
-    /* Borde para separar las celdas */
     color: white;
 }
 
 
 td {
-    /* padding:2%;
-    border-bottom: solid 1px rgb(6, 42, 97); */
+ 
     width: 100%;
-    /*para que la tabla ocupe todo su container .tabla_datos*/
 }
 
 tbody tr {
@@ -522,7 +457,6 @@ tbody tr:hover {
     background: white;
 }
 
-/* Ajuste para el nombre de las celdas */
 #celdaName,
 #celdaApellido1,
 #celdaApellido2,
@@ -533,19 +467,13 @@ tbody tr:hover {
 #celdaBtnEditar,
 #celdaBtnEliminar {
     white-space: nowrap;
-    /* Evita el salto de línea para el texto largo */
     overflow: hidden;
-    /* Oculta el exceso de texto */
     text-overflow: ellipsis;
-    /* Muestra puntos suspensivos (...) para indicar que hay más texto */
+    
 }
-
-/*alinear label e inputs*/
-
 
 #registro_datos {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 0.7fr 1.5fr;
     gap: 10px;
     padding-top: 15%;
@@ -561,16 +489,14 @@ tbody tr:hover {
 #registro_datos select {
     width: 85%;
     box-sizing: border-box;
-    /* margin-bottom: 2%;
-    margin-right: 2%; */
+  
 }
 
 .btn_add {
     grid-column: span 2;
-    /* Ocupa las dos columnas */
+  
 }
 
-/* botones Mercedes*/
 .liLista {
     list-style: none;
     border: rgb(88, 83, 83) 1.5px solid;
@@ -581,27 +507,26 @@ tbody tr:hover {
 }
 
 
-/*ventana modal*/
-/* Fondo modal: negro con opacidad al 50% */
+
 .modal {
     display: none;
-    /* Por defecto, estará oculto */
+   
     position: fixed;
-    /* Posición fija */
+   
     z-index: 1;
-    /* Se situará por encima de otros elementos de la página*/
+  
     padding-top: 200px;
-    /* El contenido estará situado a 200px de la parte superior */
+    
     left: 0;
     top: 0;
     width: 100%;
-    /* Ancho completo */
+
     height: 100%;
-    /* Algura completa */
+  
     overflow: auto;
-    /* Se activará el scroll si es necesario */
+  
     background-color: rgba(0, 0, 0, 0.5);
-    /* Color negro con opacidad del 50% */
+   
 }
 
 /* Ventana o caja modal */
@@ -644,6 +569,52 @@ tbody tr:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.liLista li:hover {
+    background-color: #5584AC;
+    cursor: pointer;
+}
+.liLista {
+
+    list-style-type: none;
+    padding: 0;
+    margin: o;
+}
+/* Estilo ventana modal */
+.modal {
+    display: none;
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .liLista li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+ 
+.liLista li:last-child {
+    border-bottom: none;
+  }
+  .button-containerfkb {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+     margin-top: 10%;
+     margin-left: 50%;
+     
+ }
+ .button-containerfkb button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 30px;
+ }
 
 @media screen and (max-width: 430px) {
     .content_main {
@@ -669,25 +640,7 @@ tbody tr:hover {
         height: 250px;
         padding-top: 60px;
     }
-    /* .footer_content{
-        /* display: grid;
-        grid-template-columns: auto auto;
-        background-color: #5584AC;
-        margin-top: 50px; */
-
-
-    /* display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-family: 'Verdana', 'sans-serif';
-     width: 1440; 
-    height: 124;
-    margin-bottom: 30px;
     
-    background-color:#5584AC;
-
-    } */
     .comment1 {
         margin-top: 10px;
         justify-content: center;
@@ -718,4 +671,39 @@ tbody tr:hover {
         height: 40px;
         margin-top: 10px;
     }
+    .liLista li:hover {
+    background-color: #5584AC;
+    cursor: pointer;
+}
+.liLista {
+  
+    list-style-type: none;
+ 
+    padding: 0;
+    margin: o;
+}
+/* Estilo ventana modal */
+.modal {
+    display: none;
+    /* height: 100px; */
+    width: 300px;
+   /* display: none;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .liLista li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  /* Estilo último elemento lista (sin borde inferior) */
+.liLista li:last-child {
+    border-bottom: none;
+  }
 }
